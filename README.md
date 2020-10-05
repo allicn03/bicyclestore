@@ -1,6 +1,6 @@
 # README
 
-This applicatino is a demo e-commerce site for a bicycle store.  CRUD database of products, search products, signup for an account, integrates stripe for payment, and email for contact.
+This application is a demo e-commerce site for a bicycle store.  CRUD database of products, search products, signup for an account, integrates stripe for payment, and email for contact.
 
 
 
