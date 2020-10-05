@@ -14,3 +14,13 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+
+$(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
