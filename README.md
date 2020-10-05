@@ -1,5 +1,9 @@
 # README
 
+This applicatino is a demo e-commerce site for a bicycle store.  CRUD database of products, search products, signup for an account, integrates stripe for payment, and email for contact.
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
