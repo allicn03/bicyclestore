@@ -1,73 +1,58 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1 {
-    font-family: Helvetica, sans-serif;
-    color: darkslategray;
-    text-align: center;
-}
 
-//NAV
-/*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
+/*------------------------------------------------------------------------------------------------
+ NAVIGATION STYLES
+-------------------------------------------------------------------------------------------------*/
 .navbar {
     transition: all 0.4s;
 }
-
 .navbar .nav-link {
-    color: #fff;
+    color: #000;
 }
-
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #fff;
+    color: #11df1b;
     text-decoration: none;
 }
-
 .navbar .navbar-brand {
-    color: #fff;
+    color: #000;
 }
-
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
+    background: #000;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 .navbar.active .nav-link {
-    color: #555;
+    color: #11df1b;
 }
-
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: #11df1b;
     text-decoration: none;
 }
-
 .navbar.active .navbar-brand {
-    color: #555;
+    color: #11df1b;
 }
-
-
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
     .navbar {
         background: #fff;
     }
-
     .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
+        color: #11df1b;
     }
 }
-
-
-
+/*---------------------------------------------------------------------------------------------------
+TEXT ELEMENT STYLES
+----------------------------------------------------------------------------------------------------*/
+h1 {
+    font-family: Helvetica, sans-serif;
+    color: darkslategray;
+    text-align: center;
+}
 /*
 *
 * ==========================================
@@ -75,14 +60,22 @@ h1 {
 * ==========================================
 *
 */
-.text-small {
-    font-size: 0.9rem !important;
+// .text-small {
+//     font-size: 0.9rem !important;
+// }
+
+
+// body {
+//     min-height: 110vh;
+//     background-color: #4ca1af;
+//     background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+// }
+.container-fluid {
+    margin-top: 70px;
 }
-
-
-body {
-    min-height: 110vh;
-    background-color: #4ca1af;
-    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 1180px;
 }
 
