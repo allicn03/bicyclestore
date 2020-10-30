@@ -18,10 +18,18 @@
         <div class="container"><%= link_to "Bike Store", root_path, class: "navbar-brand nav-link text-uppercase font-weight-bold" %>
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><%= link_to "Home", root_path, class: "nav-link text-uppercase font-weight-bold" %><span class="sr-only">(current)</span></li>
               <li class="nav-item"><%= link_to "About", simple_pages_about_path, class: "nav-link text-uppercase font-weight-bold" %></li>
               <li class="nav-item"><%= link_to "Contact", simple_pages_contact_path, class: "nav-link text-uppercase font-weight-bold" %></li>
+              <li class="nav-item">
+                <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+                  <%= form.label :q, 'Search for:' %>
+                  <%= form.text_field :q, id: 'q', value: params[:q] %>
+                  <%= form.submit 'Search' %>
+                <% end %>
+              </li>
             </ul>
           </div>
         </div>
